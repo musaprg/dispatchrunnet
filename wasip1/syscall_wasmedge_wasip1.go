@@ -495,11 +495,16 @@ func getaddrinfo(name, service string, hints *addrInfo, results []addrInfo) (int
 }
 
 func nullTerminatedString(s string) (*byte, int) {
-	if n := strings.IndexByte(s, 0); n >= 0 {
-		s = s[:n+1]
-		return unsafe.StringData(s), len(s)
-	} else {
-		b := append([]byte(s), 0)
-		return unsafe.SliceData(b), len(b)
+	if len(s) == 0 {
+		return nil, 0
 	}
+	if strings.IndexByte(s, 0) >= 0 {
+		// String already contains a null terminator
+		return (*byte)(unsafe.Pointer(unsafe.StringData(s))), len(s)
+	}
+	// Allocate a new buffer with space for the null terminator
+	buf := make([]byte, len(s)+1)
+	copy(buf, s)
+	// buf[len(s)] is already 0
+	return (*byte)(unsafe.Pointer(unsafe.SliceData(buf))), len(buf)
 }
