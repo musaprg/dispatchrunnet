@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/stealthrocket/net/wasip1"
+	"github.com/musaprg/dispatchrunnet/wasip1"
 	"golang.org/x/net/nettest"
 )
 

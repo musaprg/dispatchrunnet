@@ -1,10 +1,10 @@
-module github.com/stealthrocket/net/ttrpc
+module github.com/musaprg/dispatchrunnet/ttrpc
 
 go 1.21
 
 require (
 	github.com/containerd/ttrpc v1.2.2
-	github.com/stealthrocket/net v0.1.2
+	github.com/musaprg/dispatchrunnet v0.1.2
 	google.golang.org/protobuf v1.33.0
 )
 

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/stealthrocket/net/http"
-	"github.com/stealthrocket/net/wasip1"
+	_ "github.com/musaprg/dispatchrunnet/http"
+	"github.com/musaprg/dispatchrunnet/wasip1"
 	ws "nhooyr.io/websocket"
 )
 
