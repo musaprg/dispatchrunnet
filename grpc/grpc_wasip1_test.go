@@ -8,8 +8,8 @@ import (
 	"net"
 	"testing"
 
-	pb "github.com/stealthrocket/net/grpc"
-	"github.com/stealthrocket/net/wasip1"
+	pb "github.com/musaprg/dispatchrunnet/grpc"
+	"github.com/musaprg/dispatchrunnet/wasip1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

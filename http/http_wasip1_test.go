@@ -8,8 +8,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	_ "github.com/stealthrocket/net/http"
-	"github.com/stealthrocket/net/wasip1"
+	_ "github.com/musaprg/dispatchrunnet/http"
+	"github.com/musaprg/dispatchrunnet/wasip1"
 )
 
 func TestHTTP(t *testing.T) {

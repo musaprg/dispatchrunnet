@@ -1,4 +1,4 @@
-module github.com/stealthrocket/net
+module github.com/musaprg/dispatchrunnet
 
 go 1.21
 

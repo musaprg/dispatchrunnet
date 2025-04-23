@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/containerd/ttrpc"
-	pb "github.com/stealthrocket/net/ttrpc"
-	"github.com/stealthrocket/net/wasip1"
+	pb "github.com/musaprg/dispatchrunnet/ttrpc"
+	"github.com/musaprg/dispatchrunnet/wasip1"
 )
 
 type helloService struct {

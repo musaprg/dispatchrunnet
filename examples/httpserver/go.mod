@@ -1,5 +1,5 @@
-module github.com/stealthrocket/net/examples/httpserver
+module github.com/musaprg/dispatchrunnet/examples/httpserver
 
 go 1.21
 
-require github.com/stealthrocket/net v0.2.1
+require github.com/musaprg/dispatchrunnet v0.2.1
